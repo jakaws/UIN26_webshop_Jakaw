@@ -6,6 +6,7 @@
     <title>LEGOdudes</title>
     <link rel="stylesheet" href="styles.css" media="all">
     <script src="shopscript.js" defer></script>
+    <script src="legodudes.js"></script>
 </head>
 <body>
  <div id="container">
@@ -15,7 +16,30 @@
                 <img src="website_images/LD_logo.svg" alt="LEGOdudes"/>
              </a>
           </h1>
+          <button id="cart-button">
+            <div id="cart-quantity">0</div>
+            <img src="website_images/legocart.svg" alt="Handlevogn">
+          </button>
       </header>
+      <nav>
+        <a href="#">City</a>
+        <a href="#">Ninjago</a>
+        <a href="#">Castles & Knights</a>
+        <a href="#">Marine & pirates</a>
+        <a href="#">Movie Characters</a>
+      </nav>
+      <main>
+        <h2>Ninjago</h2>
+        <div id="product-list"></div>   
+      </main>
+      <section id="cart" class="hidden">
+          <table id="cart-items">
+             <tr>
+                <td>Ingen varer i Handlevognen enda.</td>
+             </tr>
+          </table>
+          <p>Total pris: <span id="total-price"></span>NOK</p>
+      </section>
  </div>
 </body>
 </html>
